@@ -8,15 +8,14 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      //"css": [""],
       "js": ["jquery-3.1.1.min.js", "season.js", "velocity.min.js"],
       "run_at" : "document_end"
     }
   ],
   "browser_action": {
-    "default_icon": "icon.png",
-    //"default_popup": "popup.html",
-    "default_title": "Click here!"
+    "default_icon": "icon48.png",
+    "default_popup": "popup/popup.html",
+    "default_title": "Seasons Change"
   },
 
   "web_accessible_resources" : [
