@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Seasons Change",
+  "description": "Add an animation layer to any website you want! (Depends on the season!)",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      //"css": [""],
+      "js": ["jquery-3.1.1.min.js", "season.js", "velocity.min.js"],
+      "run_at" : "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    //"default_popup": "popup.html",
+    "default_title": "Click here!"
+  },
+
+  "web_accessible_resources" : [
+    "snowflake.png"
+  ],
+
+  "permissions": [
+    "activeTab",
+    "tabs", "http://*/*", "https://*/*"
+  ]
+}
