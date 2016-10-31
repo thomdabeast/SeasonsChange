@@ -20,7 +20,7 @@
   },
 
   "web_accessible_resources" : [
-    "snowflake.png"
+    "snowflake.png", "icicles.png", "snowball.png"
   ],
 
   "permissions": [
